@@ -1,7 +1,8 @@
 # suzi-agri-mcp · 中国首个农业 MCP Server
 
 > **China's first Chinese-language MCP Server for agricultural regions.**
-> 把中国农业产区数据源按 MCP（Model Context Protocol）标准封装，让所有支持 MCP 的 AI 客户端（Claude Desktop / Cursor / 豆包 / Kimi 等）**即插即用**获得农业数据能力。
+> 把中国农业产区数据源按 MCP（Model Context Protocol）标准封装，让所有**可自行配置 MCP** 的 AI 客户端（Claude Desktop / Cursor / Cherry Studio / Kimi Code 等）**即插即用**获得农业数据能力。
+> （注：豆包 / Kimi 等 C 端 App 目前不支持用户自行添加第三方 MCP，请使用支持 MCP 配置的桌面端或 CLI 客户端。）
 
 由 [四川粟子农业科技有限公司（粟子农场）](https://suzi-agri.com/) 开源 · MIT License · 零第三方依赖 · 免费、无需 API 密钥
 
@@ -13,7 +14,7 @@
 
 | 工具 | 功能 | 数据源 | 成本 |
 |---|---|---|---|
-| `suzi_weather` | 12 个中国农业产区实时气象 + 7 天预报 + NASA POWER 30 年农业气候基准 | [Open-Meteo](https://open-meteo.com/) + [NASA POWER](https://power.larc.nasa.gov/) | 免费无密钥 |
+| `suzi_weather` | 11 个中国农业产区实时气象 + 7 天预报 + NASA POWER 30 年农业气候基准 | [Open-Meteo](https://open-meteo.com/) + [NASA POWER](https://power.larc.nasa.gov/) | 免费无密钥 |
 | `suzi_weather_alerts` | 暴雨 / 高温 / 霜冻 / 大风 **农事预警扫描**，输出等级与建议动作 | 同上 | 免费无密钥 |
 
 **预设产区**：泸州 / 龙马潭 / 合江 / 先市（晚熟荔枝·真龙柚）/ 四川 / 云南 / 广西 / 海南 / 黑龙江 / 北京 / 山东。任意中文地名自动回落川南坐标。
@@ -62,7 +63,7 @@ printf '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion
 | 接入方式 | 逐家注册密钥、读文档、写对接代码 | 标准协议，MCP 客户端即插即用 |
 | 换 AI 客户端 | 重新对接一遍 | 零改动 |
 | 农业语义 | 裸数据，自己翻译 | 产区预设 + 农事预警阈值 + 30 年气候基准 |
-| 中文产区 | 国外源需自行换算 | 12 个中国农业产区开箱即用 |
+| 中文产区 | 国外源需自行换算 | 11 个中国农业产区开箱即用 |
 | 成本 | 多有订阅费/配额 | 免费无密钥（MIT） |
 
 ## 🗺 路线图

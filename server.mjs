@@ -123,7 +123,7 @@ async function toolWeatherAlerts(args) {
 const TOOLS = [
   {
     name: 'suzi_weather',
-    description: '获取中国农业产区实时气象+7天预报+NASA POWER 30年气候基准（免费双源，覆盖泸州/合江/龙马潭等12个预设产区，支持任意中文地名回落川南坐标）',
+    description: '获取中国农业产区实时气象+7天预报+NASA POWER 30年气候基准（免费双源，覆盖泸州/合江/龙马潭等11个预设产区，支持任意中文地名回落川南坐标）',
     inputSchema: {
       type: 'object',
       properties: {
